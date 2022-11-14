@@ -1,0 +1,153 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: #F2EAE2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #6C7289;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 343px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 16px;
+}
+
+.card picture img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body{
+    padding: 24px;
+}
+
+.card-body h1, p {
+    margin-top: 0;
+}
+
+.card .categorie {
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    margin-top: -4px;
+}
+
+.card h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1C232B;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+
+.card .description {
+    margin-bottom: 24px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.price .promotional {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #3D8168;
+    line-height: 32px;
+    margin: 0 18px 0 0;
+}
+
+.price .original {
+    text-decoration: line-through;
+}
+
+button {
+    padding: 15px 0;
+    width: 100%;
+    background-color: #3D8168;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: .4s;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background-color: #1A4032;
+    transition: .4s;
+}
+
+button svg {
+    vertical-align: text-top;
+    margin-right: 11px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 25px;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: #3D8168;
+}
+
+
+@media (min-width: 620px) { 
+    .card {
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+    .card-body {
+        padding: 32px;
+    }
+
+    .card picture img{
+        border-radius: 10px 0 0 10px;
+        min-width: 300px;
+    }
+
+    .card .categorie {
+        margin-bottom: 16px;
+    }
+
+    .card h1 {
+        margin-bottom: 25px;
+    }
+
+    .card .description {
+        margin-bottom: 29px;
+    }
+
+    .price {
+        margin-bottom: 30px;
+    }
+
+    .price .original {
+        letter-spacing: -0.5px;
+    }
+ }
